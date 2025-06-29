@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Foodies Adda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">🍴 Foodies Adda</div>
+    <nav class="nav-links">
+      <a href="#why">Why Choose Us?</a>
+      <a href="#menu">Explore Menu</a>
+      <a href="#delivery">Delivery & Payment</a>
+      <a href="#follow">Follow Us</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Get Delicious Food Anytime</h1>
+    <p>Eat Smart & Healthy</p>
+    <div class="hero-buttons">
+      <button onclick="scrollToMenu()">View Menu</button>
+      <button onclick="placeOrder()">Order Now</button>
+    </div>
+  </section>
+
+  <section class="why-us" id="why">
+    <h2>Why Choose Us?</h2>
+    <p class="why-subtext">We use both original recipes and classic versions of famous food items.</p>
+    <div class="why-cards">
+      <div class="why-card">
+        <h3>🍽️ Food Service</h3>
+        <p>Experience fine dining at the comfort of your home. All our orders are carefully packed and arranged to give you nothing less than perfect.</p>
+      </div>
+      <div class="why-card">
+        <h3>🥗 Fresh Food</h3>
+        <p>The Fresh Food group provides fresh-cut fruits and vegetables directly picked from our partner farms and farm houses so that you always get them tree to plate.</p>
+      </div>
+      <div class="why-card">
+        <h3>🏷️ Best Offers</h3>
+        <p>Food Coupons & Offers up to 50% OFF and Exclusive Promo Codes on All Online Food Orders.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items" id="menu-items"></div>
+  </section>
+
+  <section class="organic-section" id="fresh">
+    <h2>Fresh, Healthy, Organic, Delicious Fruits</h2>
+    <p>
+      Say no to harmful chemicals and go fully organic with our range of fresh fruits and veggies. Pamper your body and your senses with the true and unadulterated gifts from mother nature.
+    </p>
+    <button class="action-button">Watch Video</button>
+  </section>
+
+  <section class="delivery-section" id="delivery">
+    <h2>Delivery and Payment</h2>
+    <p>
+      Enjoy hassle-free payment with the plenitude of payment options available for you. Get live tracking and locate your food on a live map. It's quite a sight to see your food arrive to your door.
+      Plus, you get a <strong>5% discount</strong> on every order every time you pay online.
+    </p>
+    <button class="action-button" onclick="placeOrder()">Order Now</button>
+
+    <div class="gift-section" id="follow">
+      <h3>🎁 Thank you for being a valuable customer to us.</h3>
+      <p>We have a surprise gift for you!</p>
+      <button class="action-button">Redeem Gift</button>
+    </div>
+  </section>
+
+  <section class="cart">
+    <h2>Your Cart 🛒</h2>
+    <ul id="cart-items"></ul>
+    <p id="total">Total: ₹0</p>
+    <button onclick="placeOrder()">Place Order</button>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by Foodies Adda</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
